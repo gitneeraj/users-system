@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon index.js"
+        "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
     },
     "repository": {
         "type": "git",
@@ -23,6 +23,9 @@
         "express": "^4.17.2"
     },
     "devDependencies": {
+        "eslint": "^8.5.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.25.3",
         "nodemon": "^2.0.15"
     }
 }

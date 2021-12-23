@@ -1,9 +1,9 @@
-import express from "express";
+import express from 'express';
 
-const router = express.Router()
+const router = express.Router();
 
 router.get('/', (_, res) => {
-  res.send('Inside Auth') 
-})
+  res.send('Inside Auth');
+});
 
-export default router
+export default router;

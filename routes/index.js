@@ -1,23 +1,23 @@
-import express from "express";
+import express from 'express';
 
-import Auth from "./auth.js";
-import Users from "./users.js";
+import Auth from './auth';
+import Users from './users';
 
-const router = express.Router()
+const router = express.Router();
 
 const routes = [
   {
     path: '/auth',
-    route: Auth
+    route: Auth,
   },
   {
     path: '/users',
-    route: Users
-  }
-]
+    route: Users,
+  },
+];
 
 routes.forEach((route) => {
-  router.use(route.path, route.route)
-})
+  router.use(route.path, route.route);
+});
 
-export default router
+export default router;
