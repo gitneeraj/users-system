@@ -1,9 +1,10 @@
 import express from 'express';
 
+import { register, getAll } from '../controllers/users';
+
 const router = express.Router();
 
-router.get('/', (_, res) => {
-  res.send('inside users');
-});
+router.get('/', getAll);
+router.post('/register', register);
 
 export default router;
